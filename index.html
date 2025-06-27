@@ -437,7 +437,7 @@ h6 {
     </div>
 
     <div class="search-area">
-      <input type="search" placeholder="¿Qué necesitas?" />
+      <input type="search" id="searchInput"  placeholder="¿Qué necesitas?" />
       <button><i class="fas fa-times"></i></button>
     </div>
 
@@ -494,7 +494,7 @@ h6 {
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1200px; margin: auto; padding-top: 30px;">
 
     <!-- Producto 1 -->
-    <div style="background-color: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <div class="producto-tarjeta" style="background-color: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
       <img src="cuadernos.png" alt="Libreta profesional" style="width: 100%; border-radius: 8px;">
       <h3>Libreta Profesional A4</h3>
       <p>160 hojas, papel bond, anillada. Ideal para oficina o universidad.</p>
@@ -764,6 +764,22 @@ h6 {
       let next = (currentSlide + 1) % heroSlides.length;
       showSlide(next);
     }, 5000);
+  </script>
+      
+  <script>
+    function filtrarProductos() {
+  const input = document.getElementById("searchInput").value.toLowerCase();
+  const productos = document.querySelectorAll(".producto-tarjeta");
+
+  productos.forEach((producto) => {
+    const texto = producto.textContent.toLowerCase();
+    if (texto.includes(input)) {
+      producto.style.display = "block";
+    } else {
+      producto.style.display = "none";
+    }
+  });
+}
   </script>
 </body>
 </html>
