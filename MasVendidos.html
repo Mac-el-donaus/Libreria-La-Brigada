@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- 🧠 METADATOS Y ENLACES -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Libreria la Brigada</title>
+
+  <!-- ✅ Fuentes e íconos -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- 🎨 Hoja de estilos externa -->
+  <link rel="stylesheet" href="MasVendidos.css">
+</head>
+
+<body>
+
+  <!-- 📞 BARRA SUPERIOR DE CONTACTO -->
+  <div class="top-contact">
+    <div class="contact-left">
+      <span>📞 Contáctanos al +502 3761-7482</span>
+    </div>
+    <div class="contact-right">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </div>
+
+  <!-- 🧭 ENCABEZADO PRINCIPAL -->
+  <header class="main-header">
+    <div class="nav-container">
+      <div class="logo-area">
+        <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        <img src="prueba3.png" alt="Logo" class="logo-img" />
+      </div>
+
+      <div class="search-area">
+        <input type="search" placeholder="¿Qué necesitas?" />
+        <button><i class="fas fa-times"></i></button>
+      </div>
+
+      <div class="user-area">
+        <span><i class="fas fa-user-circle"></i> Invitado</span>
+        <a href="#"><i class="fas fa-heart"></i> Mis listas</a>
+        <a href="#"><i class="fas fa-shopping-bag"></i> Mis pedidos</a>
+        <a href="#" class="cart"><i class="fas fa-shopping-cart"></i> 0 | Total: Q 0.00</a>
+      </div>
+    </div>
+
+  
+
+    <nav class="main-menu">
+    <a href="index.html">Categorías</a>
+    <a href="Pmarca.html">Por Marca</a>
+    <a href="MasVendidos.html">Más vendidos</a>
+    <a href="#">Destacados</a>
+    <a href="#">Regreso a clases</a>
+    <a href="sobreNosotros.html">Sobre nosotros</a>
+  </nav>
+  </header>
+
+
+    <!-- 🎞️ SLIDER PRINCIPAL -->
+  <section class="hero-slider">
+    <div class="slides">
+      <div class="slide active" style="background-image:url('escolar.png')">
+    
+    
+    </div>
+
+    <div class="indicators">
+      <button data-slide="0" class="active"></button>
+      <button data-slide="1"></button>
+      <button data-slide="2"></button>
+    </div>
+
+
+  </section>
+
+  <!-- 🔵 SECCIÓN DE PRODUCTOS POR MARCA -->
+  <section style="padding: 40px; background-color: #f9f9f9;">
+    <div class="contenedor-principal" style="max-width: 1100px; margin: auto;">
+      <!-- Filtro de marca -->
+      <div style="display: flex; align-items: center; margin-bottom: 20px;">
+        <label for="marca" style="margin-right: 10px; font-weight: bold;">Marca:</label>
+        <select id="marca" style="padding: 8px; border-radius: 6px; border: 1px solid #ccc;">
+          <option value="todas">Todas</option>
+          <option value="bic">Bic</option>
+          <option value="tucan">Tucan</option>
+          <option value="mapped">Mapped</option>
+        </select>
+      </div>
+
+      <!-- Filtro de categoría -->
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+  <label for="categoria" style="margin-right: 10px; font-weight: bold;">Categoría:</label>
+  <select id="categoria" style="padding: 8px; border-radius: 6px; border: 1px solid #ccc;">
+    <option value="todas">Todas</option>
+    <option value="lapiceros">Lapiceros</option>
+    <option value="metrica">Métrica</option>
+    <option value="tecnologia">Dibujo</option>
+  </select>
+</div>
+
+
+<!-- Productos BIC -->
+<div class="productos marca-bic">
+  <h2 class="titulo-seccion">PRODUCTOS BIC</h2>
+  <div class="grid-productos">
+    <div class="producto-card">
+      <img src="crayonesBic.png" alt="Crayones Bic">
+      <h3>Crayones Bic</h3>
+      <p>Lápices de colores Bic evolution más 2 lápices de grafito - 26 Uds.</p>
+      <p><strong>Q20.00</strong></p>
+      <button class="boton-agregar">Agregar</button>
+    </div>
+    <div class="producto-card">
+      <img src="lapicerosBIC.png" alt="Lapiceros BIC">
+      <h3>Lapiceros BIC</h3>
+      <p>Bolígrafo BIC, Punto mediano, 1mm, 2 piezas, Color Azul.</p>
+      <p><strong>Q9.00</strong></p>
+      <button class="boton-agregar">Agregar</button>
+    </div>
+    <div class="producto-card">
+      <img src="3lapicerosBIC.png" alt="Lapiceros de 3 colores BIC">
+      <h3>Lapiceros de 3 colores BIC</h3>
+      <p>Bic Boligrafo Punto Mediano Boligrafo Bic Dura.</p>
+      <p><strong>Q12.00</strong></p>
+      <button class="boton-agregar">Agregar</button>
+    </div>
+    <div class="producto-card">
+      <img src="plumonesBIC.png" alt="Plumones BIC">
+      <h3>Plumones BIC</h3>
+      <p>Plumones escolares BIC Intensity Up con 12 Piezas.</p>
+      <p><strong>Q15.00</strong></p>
+      <button class="boton-agregar">Agregar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Productos TUCAN -->
+<div class="productos marca-tucan">
+  <h2 class="titulo-seccion">PRODUCTOS TUCAN</h2>
+  <div class="grid-productos">
+    <div class="producto-card">
+      <img src="sacapuntas.png" alt="Sacapuntas doble">
+      <h3>Sacapuntas doble</h3>
+      <p>Para lápices normales y jumbo. Compacto y fácil de llevar.</p>
+      <p><strong>Q4.50</strong></p>
+      <button class="boton-agregar">Agregar</button>
+    </div>
+    <div class="producto-card">
+      <img src="carpeta.png" alt="Carpeta de anillos">
+      <h3>Carpeta de anillos tamaño carta</h3>
+      <p>Organiza tus documentos con estilo y practicidad.</p>
+      <p><strong>Q12.00</strong></p>
+      <button class="boton-agregar">Agregar</button>
+    </div>
+    <div class="producto-card">
+      <img src="regla.png" alt="Regla">
+      <h3>Regla</h3>
+      <p>Precisión y durabilidad. Ideal para clases o diseño.</p>
+      <p><strong>Q3.25</strong></p>
+      <button class="boton-agregar">Agregar</button>
+    </div>
+    <div class="producto-card">
+      <img src="goma.png" alt="Pegamento">
+      <h3>Pegamento en barra (21 g)</h3>
+      <p>Adherencia fuerte y limpia. No tóxico y fácil de aplicar.</p>
+      <p><strong>Q5.00</strong></p>
+      <button class="boton-agregar">Agregar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Productos MAPPED -->
+<div class="productos marca-mapped">
+  <h2 class="titulo-seccion">PRODUCTOS MAPPED</h2>
+  <div class="grid-productos">
+    <div class="producto-card">
+      <img src="sacapuntas.png" alt="Sacapuntas doble">
+      <h3>Sacapuntas doble</h3>
+      <p>Para lápices normales y jumbo. Compacto y fácil de llevar.</p>
+      <p><strong>Q4.50</strong></p>
+      <button class="boton-agregar">Agregar</button>
+    </div>
+    <div class="producto-card">
+      <img src="carpeta.png" alt="Carpeta de anillos">
+      <h3>Carpeta de anillos tamaño carta</h3>
+      <p>Organiza tus documentos con estilo y practicidad.</p>
+      <p><strong>Q12.00</strong></p>
+      <button class="boton-agregar">Agregar</button>
+    </div>
+    <div class="producto-card">
+      <img src="regla.png" alt="Regla">
+      <h3>Regla</h3>
+      <p>Precisión y durabilidad. Ideal para clases o diseño.</p>
+      <p><strong>Q3.25</strong></p>
+      <button class="boton-agregar">Agregar</button>
+    </div>
+    <div class="producto-card">
+      <img src="goma.png" alt="Pegamento">
+      <h3>Pegamento en barra (21 g)</h3>
+      <p>Adherencia fuerte y limpia. No tóxico y fácil de aplicar.</p>
+      <p><strong>Q5.00</strong></p>
+      <button class="boton-agregar">Agregar</button>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <!-- 👣 PIE DE PÁGINA -->
+<footer style="background-color: #050d2e; color: white; padding: 20px; text-align: center; margin-top: 60px;">
+  <p>&copy; 2025 Librería Escolar. Todos los derechos reservados.</p>
+  <div style="max-width: 1100px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+
+    <!-- 🏢 Información de la empresa -->
+    <div style="flex: 1 1 250px;">
+      <h3 style="color: var(--naranja-vibrante); margin-bottom: 10px;">Librería La Brigada</h3>
+      <p>Tu destino confiable para útiles escolares, libros y más.</p>
+      <p><i class="fas fa-map-marker-alt"></i> Zona 1, Ciudad de Guatemala</p>
+      <p><i class="fas fa-phone"></i> +502 3761-7482</p>
+      <p><i class="fas fa-envelope"></i> contacto@librerialabrigada.com</p>
+    </div>
+
+    <!-- 🔗 Enlaces rápidos -->
+    <div style="flex: 1 1 180px;">
+      <h4 style="color: var(--naranja-vibrante); margin-bottom: 10px;">Enlaces rápidos</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#" style="color: white; text-decoration: none;">Inicio</a></li>
+        <li><a href="#" style="color: white; text-decoration: none;">Productos</a></li>
+        <li><a href="#" style="color: white; text-decoration: none;">Ofertas</a></li>
+        <li><a href="#" style="color: white; text-decoration: none;">Contacto</a></li>
+        <li><a href="#" style="color: white; text-decoration: none;">Sobre nosotros</a></li>
+      </ul>
+    </div>
+
+    <!-- 📲 Redes sociales -->
+    <div style="flex: 1 1 180px;">
+      <h4 style="color: var(--naranja-vibrante); margin-bottom: 10px;">Síguenos</h4>
+      <a href="#" style="color: white; font-size: 20px; margin-right: 10px;"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" style="color: white; font-size: 20px; margin-right: 10px;"><i class="fab fa-instagram"></i></a>
+      <a href="#" style="color: white; font-size: 20px;"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <!-- 💬 Derechos reservados -->
+  <div style="text-align: center; margin-top: 30px; border-top: 1px solid #444; padding-top: 15px;">
+    © 2025 Librería La Brigada. Todos los derechos reservados.
+  </div>
+</footer>
+
+  <!-- 🔁 SCRIPT PARA FILTRAR -->
+  <script>
+    document.getElementById('marca').addEventListener('change', function () {
+      const marcaSeleccionada = this.value;
+      const secciones = document.querySelectorAll('.productos');
+
+      secciones.forEach(seccion => {
+        if (marcaSeleccionada === 'todas') {
+          seccion.style.display = 'block';
+        } else {
+          if (seccion.classList.contains(`marca-${marcaSeleccionada}`)) {
+            seccion.style.display = 'block';
+          } else {
+            seccion.style.display = 'none';
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
